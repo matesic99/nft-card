@@ -1,0 +1,130 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+        .card{
+            width: 88%;
+            background-color: $white;
+            border-radius: 2rem;
+            padding: 2.5rem;
+            background-color: $very-dark-blue-card-bg;
+            max-width: 35rem;
+
+
+            .img-wrapper{
+                position: relative;
+                cursor: pointer;
+
+                
+
+                .hero{
+                width:100%;
+                border-radius: 1rem;
+                }
+                
+                .color-overlay{
+                border-radius: 1rem;
+                background-color: $cyan;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: none;
+                
+
+                }
+                .view{
+                    position: absolute;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                }
+            &:hover{
+                .color-overlay, .view{
+                    display: block;
+                }
+            }
+        }
+
+         .title{
+            font-size: 2.2rem;
+            color: white;
+            margin-top: 2rem;
+            cursor: pointer;
+
+            &:hover{
+                color: $cyan;
+            }
+                }
+
+        .description{
+            color:$soft-blue;
+            margin-top:1.2rem;
+            line-height: 160%;
+            font-weight: 300;
+            font-size: 1.6rem;
+        }
+
+        .price-block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-bottom:2rem;
+            border-bottom: 2px solid $very-dark-blue-line;
+
+        
+        .price-wrapper{
+            align-items: center;
+            display: flex;
+            gap:0.8rem;
+            font-size: 1.5rem;
+        }
+            
+        
+        .price{
+            color:$cyan;
+            font-weight: 600;
+        }
+        .clock{
+            color: $soft-blue;
+            }
+        }
+        .creator{
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            color:$soft-blue;
+            margin-top: 1.6rem;
+            font-size: 1.5rem;
+            color: $soft-blue;
+
+            img{
+                width:3.3rem;
+                border: 1px solid transparent;
+                border-radius: 50%;
+            }
+            &:hover{
+                img{
+                    border:1px solid white;
+                    cursor: pointer;
+                }
+                span{
+                    color: $cyan;
+                }
+            }
+
+        }
+        
+    }
+
+}
+
+
